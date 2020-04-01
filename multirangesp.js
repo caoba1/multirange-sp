@@ -45,7 +45,8 @@ for (var i = 0; i < multiRangeElements.length; i++) {
 
 
 function showVals(){
-  document.getElementById('property_one').innerHTML="Slider 1 is now at >> low:"+document.getElementById('slider1').lowValue+"::high:"+document.getElementById('slider1').highValue;
+  document.getElementById('property_one').innerHTML="Slider <font color=\"lightblue\">1</font> is now at >> low:"+document.getElementById('slider1').lowValue+"::high:"+document.getElementById('slider1').highValue;
+  document.getElementById('property_two').innerHTML="Slider <font color=\"#55a4aa\">2</font> is now at >> low:"+document.getElementById('slider2').lowValue+"::high:"+document.getElementById('slider2').highValue;
 }
 
 initMultirangeSliders()
