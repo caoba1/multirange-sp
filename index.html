@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins|Lacquer' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="multirangesp.css">
+
+  <title>Multirange slider elements</title>
+</head>
+<body>
+
+  <h2>Range Slider</h2>
+
+<div id="container_one">
+This is a container for the first slider's range
+</br>
+<div id=property_one></div>
+</div>
+
+
+<div class="container_slider">
+<div id="slider1" class="multirange" role="group" aria-labelledby="multi-lbl" style="--lowVal: 0.0; --highVal: 100; --min: 0; --max: 100;">
+  <!-- div id="multi-lbl">Multiple range slider</div-->
+  <input class="multirange-low-val" id="lowVal" type="range" min="0" value="0" max="100" step="1"/>
+  <output for="lowVal" style="--c: var(--lowVal);"></output>
+  <input class="multirange-high-val" id="highVal" type="range" min="0" value="100" max="100" step="1"/>
+  <output for="highVal" style="--c: var(--highVal);"></output>
+</div>
+</div>
+
+
+ <script src="multirangesp.js"></script>
+</body>
+</html>
