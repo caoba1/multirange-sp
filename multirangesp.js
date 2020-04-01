@@ -8,7 +8,7 @@ for (var i = 0; i < multiRangeElements.length; i++) {
     _multiRangeElement.lowValue = 0;
 
     /* Since we only have two thumbs, we only get one high
-     * and one low child element per element */
+     * and one low child element per slider */
     /*let lowValElement = _multiRangeElement.getElementsByClassName('multirange-low-val');
     let highValElement = _multiRangeElement.getElementsByClassName('multirange-high-val');*/
 
@@ -20,7 +20,7 @@ for (var i = 0; i < multiRangeElements.length; i++) {
       if (_t.id==='lowVal'){
         /** TODO: **/
         if (_multiRangeElement.highValue <= parseInt(_t.value)){
-          _t.value = toString(parseInt(_multiRangeElement.highValue) - 1);
+          _t.value = parseInt(_multiRangeElement.highValue) - 1;
           _t.parentNode.style.setProperty(`--${_t.id}`, +_t.value);
         } else {
           _t.parentNode.style.setProperty(`--${_t.id}`, +_t.value);
